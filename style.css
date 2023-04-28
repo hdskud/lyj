@@ -1,0 +1,265 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+}
+ol,ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  vertical-align: bottom;
+}
+address{
+  font-style: normal;
+}
+
+#wrap{
+  width: 100%;
+  min-width: 1100px;
+}
+.boxalign{
+  width: 1100px;
+  margin: auto;
+}
+/* HEADER */
+header{
+  padding: 1.5rem 0;
+}
+header .boxalign{
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .boxalign .logo{
+}
+header .boxalign .logo h1{
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+}
+header .boxalign .logo h1 a{}
+header .boxalign .logo h1 a img{
+  width: 15%;
+}
+
+nav{
+  display: flex;
+  gap: 7rem;
+}
+nav div{}
+nav div a{
+  /* border: 1px solid red; */
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 0 1.5rem;
+}
+nav div:hover{
+  color:#beac87;
+}
+/* MAIN */
+main{
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid; */
+}
+main .mbg{
+  background: url(./images/main_bg.jpg.png) no-repeat;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  transition: .7s;
+  
+}
+main:hover .mbg{
+  transform: scale(1.2);
+}
+main .mtext{
+  background: url(./images/main_img_04.png) no-repeat;
+  position: absolute;  
+  top: 0;
+  left: 10%;
+  bottom: 0;
+  padding: 2rem;
+  transition: .7s;
+}
+main:hover .mtext{
+  left: 10%;
+  bottom: 0;
+  padding: 4rem;
+}
+main .mtext h2{
+  padding: 10rem 0 0.5rem;
+  font-size: 2.2rem;
+}
+main .mtext span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #336455;
+  margin: 0.8rem 0 2rem;
+  border-radius: 50%;
+  transition: .7s;
+}
+main:hover span{
+  background: #fff;
+  width: 55px;
+  border-radius: 0;
+  height: 4px;
+}
+main .mtext p{
+  width: 300px;
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+  line-height: 1.6;
+}
+main .mtext a{
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  background-color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(0,0,0,0.8);
+  transition: .7s;
+  
+}
+main:hover a{
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* SECTION */
+section{
+  padding: 5rem 0;
+}
+section .boxalign1{}
+section .boxalign1 div{
+  padding-left: 4rem;
+}
+section .boxalign1 .bpvd{
+  width: 1800px;
+  display: flex;
+  margin-left: 10%;
+  justify-content: space-around
+}
+section .boxalign1 .bp{
+  align-items: center;
+  /* justify-content: center; */
+}
+section .boxalign1 .bp h2{
+  font-size: 1.8rem;
+}
+section .boxalign1 .bp p{
+  font-size: 1.4rem;
+}
+section .boxalign1 .vd{
+  text-align: center;
+  
+}
+section .boxalign1 .vd h2{
+  font-size: 1.8rem;
+}
+section .boxalign1 .vd p{
+  font-size: 1.4rem;
+}
+section .boxalign1 ul{
+  display: flex;
+  margin: 1rem 0 2rem 9rem; 
+  gap: 6rem;
+}
+section .boxalign1 ul li{
+} 
+section .boxalign1 ul li img{
+  width: 350px;
+  height: 250px;
+  margin-top: 20px;
+  transition: .7s;
+}
+section .boxalign1 ul li img:hover{
+  transform: scale(1.1);
+}
+section .boxalign1 ul li p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 1rem;
+  /* margin: auto; */
+}
+section .boxalign1 ul li iframe{
+  border: 15px solid #dfe4dd70;
+  /* border-radius: 10px; */
+  margin-left: 65px;
+  margin-top: 50px;
+  width: 350px;
+  height: 190px;
+}
+
+/* FOOTER */
+footer{
+  border-top: 7px solid #d2e4d0;
+  padding: 5rem;
+}
+footer .boxalign ul{
+  align-items: center;
+  display: flex;
+  margin-left: 20%;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+footer .boxalign ul > span{
+  display: block;
+  height: 20px;
+  width: 2px;
+  background-color: #a7a5a5;
+
+}
+footer .boxalign ul li:hover{
+  font-weight: bold;
+  transition: .7s;
+}
+footer .boxalign ul li a{
+  display: inline-block;
+  font-size: 1.1rem;
+}
+footer .boxalign ul .snscover{
+  overflow: hidden;
+  width: 300px;
+
+}
+footer .boxalign ul .snscover a{
+  background: url(./images/footer_img.png);
+  width: 45px;
+  height: 40px;
+  font-size: 0;
+  line-height: 0;
+  opacity: 0.8;
+}
+footer .boxalign ul .snscover a:hover{
+  opacity: 1;
+}
+footer .boxalign ul .snscover .sns1{
+  background-position: 135px;
+}
+footer .boxalign ul .snscover .sns2{
+  background-position: 90px;
+}
+footer .boxalign ul .snscover .sns3{
+  background-position: 45px;
+}
+
+footer address{
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
